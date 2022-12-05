@@ -1,0 +1,102 @@
+// Clase en vivo N°07: Ciclos
+
+// Falla Playground
+// Ctrl + Shift + R
+
+// Ciclo for
+// Nos sirve para repetir un código x veces
+// Tiene tres partes (sentencias)
+// Inicializadora: declarar una variable y la inicializamos
+// Condición: mientras que se cumpla, se sigue ejecutando el código
+// Modificadora: modificamos la variable (incremento ++, decremento --) para que en algún momento deje de cumplirse la condición
+
+// Ctrl + C (para cortar la ejecución de un comando en terminal)
+// for (inicializadora; condicion; modificadora) {
+// vuelta += 2 es lo mismo que vuelta = vuelta + 2
+for (let vuelta = 10; vuelta >= 0; vuelta --) {
+    // console.log("Estamos dando la vuelta " + vuelta);
+}
+
+function pasandoPorI  () {
+    for (let i = 0; i < 5; i++) {
+        console.log("acá i tiene el valor de " + i);
+    }
+}
+// pasandoPorI();
+
+// While
+let i = true;
+while (i) {
+    // console.log("Por favor ingrese su mail");
+    // acá pasa algo y se recibe el mail 
+    // if (si el mail es válido) {
+        i = false;
+    // }
+}
+
+
+// do while
+let email = "";
+do {
+    // console.log("Ingrese su email");
+    email = "ferbin@digitalhouse.com"
+} while (! email)
+
+
+// Definición
+function tablaDeMultiplicar(numero) {
+    let i= 1;
+    while (i<= 10) {
+        console.log(numero+" * "+i+" = "+ (numero * i))
+        i++;
+    }
+}
+
+// Ejecuto
+// tablaDeMultiplicar(12);
+// tablaDeMultiplicar(6);
+// tablaDeMultiplicar(8);
+
+// Arrays y ciclos
+
+
+function sumatoria (numeros) {
+    // Acumulador
+    // que sirve para acumular el resultado de realizar una operación sobre un conjunto de datos
+    // Se declara antes del for y se le da un valor inicial
+    let resultado = 0; 
+    
+    for (let i = 0; i < numeros.length; i++) {
+        // Se realiza la operación
+        resultado = resultado + numeros[i];
+        // console.log(numeros[i]);
+        if (numeros[i] == undefined) {
+            return NaN;
+        }
+    }
+    // console.log("Después del for")
+    
+    // Retornar después del for
+    return resultado;
+}
+
+// console.log(sumatoria([15,40,50,60, 100]));
+
+function saldosDeMesesConGanancia (numeros) {
+    // Necesitamos un acumulador? Sí, tenemos que armar un array filtrando otro
+    let ganancias = [];
+
+    // Qué vamos a recorrer? El array números
+    for (let i = 0; i < numeros.length; i++) {
+        // Tenemos condiciones? Sí, queremos los positivos
+        if (numeros[i] > 0) { // filtrar
+            // Si llego a esta linea, encontré un número positivo
+            ganancias.push(numeros[i]);
+        }
+    }
+
+    // Retornamos después del for
+    return ganancias;
+}
+
+// console.log(saldosDeMesesConGanancia([100,0,20, -50, 500]))

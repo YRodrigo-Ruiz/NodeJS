@@ -1,0 +1,38 @@
+[
+    {
+        "brand": "Bandai",
+        "name": "Gamora",
+        "price": "120 USD",
+        "stock": "100 units"
+    },
+    {
+        "brand": "Bandai",
+        "name": "Hulk",
+        "price": "100 USD",
+        "stock": "90 units"
+    },
+    {
+        "brand": "Bandai",
+        "name": "Vegeta",
+        "price": "150 USD",
+        "stock": "200 units"
+    },
+    {
+        "brand": "Bandai",
+        "name": "Sailor Pluto",
+        "price": "90 USD",
+        "stock": "50 units"
+    },
+    {
+        "brand": "Bandai",
+        "name": "Sailor Saturn",
+        "price": "300 USD",
+        "stock": "150 units"
+    },
+    {
+        "brand": "Bandai",
+        "name": "Wonder Woman",
+        "price": "200 USD",
+        "stock": "40 units"
+    }
+]

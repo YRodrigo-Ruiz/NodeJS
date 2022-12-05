@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "marca": "Olmo",
+    "modelo": "Regal",
+    "rodado": 29,
+    "anio": 2022,
+    "color": "azul",
+    "peso": 16,
+    "tipo": "Montañera",
+    "precio": 270000,
+    "vendida": "si"
+  },
+  {
+    "id": 2,
+    "marca": "Halley",
+    "modelo": "Ruta",
+    "rodado": 32,
+    "anio": 2022,
+    "color": "verde",
+    "peso": 16,
+    "tipo": "Paseo",
+    "precio": 33750,
+    "vendida": "si"
+  },
+  {
+    "id": 3,
+    "marca": "Battle",
+    "modelo": "FM18F29AM210",
+    "rodado": 29,
+    "anio": 2022,
+    "color": "roja",
+    "peso": 16,
+    "tipo": "Retro",
+    "precio": 49500,
+    "vendida": "si"
+  }
+]
