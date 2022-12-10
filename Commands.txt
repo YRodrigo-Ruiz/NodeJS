@@ -1,0 +1,41 @@
+Git Basic Commands:
+git config --global user.name
+git config --global user.email
+git init -b main  => change branch master to main
+git branch -M main
+git config --global init.defaultBranch main  => set git branch default to main
+git init
+git add .
+git commit -m "first commit"
+git remote add origin URL
+git push -u origin main
+git clone URL
+
+===============================================================================================
+
+NPM(EXPRESS AND MORE)
+npm init -y  => para descargar el node modules y asignarle todo "yes" por default.
+npm install express  => install express
+nmp install express --save  => se guarda para el momento de se clonado aparesca como dependencias guardadas
+npm init express
+npm install --save-dev nodemon  =>para que lo guarde como dependencia de desarrollo.
+npx nodemon app.js  => para poner al archivo app.js en watch y actualice el servidor.
+npm install  => para quien quiera clonar el proyecto instale todas las dependencias necesarias.
+
+***ENTRY POINT> app.js ***
+const express = require("express");   ===>Requerir el modulo.
+const app = express ();               ===>
+
+app.listen(PORT, () => 
+      console.log("servidor a las escucha del puerto xxxx"));    ===> se levanta un servidor express.
+
+app.get("/", (req, res) => {
+      res.send("Hello Word");});                                 ===> se crea una ruta de respuesta para la ruta "/".
+ 
+
+
+
+
+
+
+
