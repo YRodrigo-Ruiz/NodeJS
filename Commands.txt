@@ -24,13 +24,16 @@ npm install  => para quien quiera clonar el proyecto instale todas las dependenc
 
 ***ENTRY POINT> app.js ***
 const express = require("express");   ===>Requerir el modulo.
-const app = express ();               ===>
-
+const app = express ();               ===>se guarda en la variable.
+const path = require("path")          ===>se guarda en la variable.
 app.listen(PORT, () => 
       console.log("servidor a las escucha del puerto xxxx"));    ===> se levanta un servidor express.
 
 app.get("/", (req, res) => {
-      res.send("Hello Word");});                                 ===> se crea una ruta de respuesta para la ruta "/".
+      res.send("Hello Word");});                                 ===> se crea una ruta de respuesta para la ruta "/" con metodo
+                                                                      send (array,objeto, variables,etc).
+app.get("/", (req, res) => {
+      res.sendFile(path.join(__dirname, "./views/index.html"));}) ==> para devolver una archivo con un RUTA ABSOLUTA.
  
 
 
