@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
       res.send("Hello Word");});                                 ===> se crea una ruta de respuesta para la ruta "/" con metodo
                                                                       send (array,objeto, variables,etc).
 app.get("/", (req, res) => {
-      res.sendFile(path.join(__dirname, "./views/index.html"));}) ==> para devolver una archivo con un RUTA ABSOLUTA.
+      res.sendFile(path.join(__dirname, "./views/index.html"));}) ==> para devolver una archivo con un RUTA ABSOLUTA.!
  
 
 
