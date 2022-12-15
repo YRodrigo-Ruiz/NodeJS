@@ -33,7 +33,11 @@ app.get("/", (req, res) => {
       res.send("Hello Word");});                                 ===> se crea una ruta de respuesta para la ruta "/" con metodo
                                                                       send (array,objeto, variables,etc).
 app.get("/", (req, res) => {
-      res.sendFile(path.join(__dirname, "./views/index.html"));}) ==> para devolver una archivo con un RUTA ABSOLUTA.!
+      res.sendFile(path.join(__dirname, "./views/index.html"));}) ==> para devolver una archivo con un RUTA ABSOLUTA.
+
+const publicPath = path.resolve(__dirname, "./Public");          ===>para que nuestra app use la carpeta Public y lo tenga como recurso estatico.
+app.use( express.static(publicPath) );
+
  
 
 
